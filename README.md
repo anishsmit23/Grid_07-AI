@@ -93,6 +93,17 @@ If challenged --------------→ defends opinion
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="architecture_infographic.png" alt="Technical Architecture — Three-Phase System Flow" width="100%"/>
+    </td>
+    <td align="center" width="50%">
+      <img src="architecture_flowchart.png" alt="AI System Architecture — Multi-Phase Technical Block Diagram" width="100%"/>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Tech Stack (MAIN POWERHOUSES)
@@ -303,20 +314,20 @@ Both Phase 2 and Phase 3 share the same three-tier LLM resolution chain, making 
 
 ```
 ┌─────────────────────────────────────┐
-│  1. Groq llama-3.3-70b-versatile   │  ← Primary (fast, free tier, native JSON)
-│     GROQ_API_KEY in .env           │
+│  1. Groq llama-3.3-70b-versatile    │  ← Primary (fast, free tier, native JSON)
+│     GROQ_API_KEY in .env            │
 └──────────────┬──────────────────────┘
                │ on exception / missing key
                ▼
 ┌─────────────────────────────────────┐
-│  2. Gemini 2.0-flash               │  ← Secondary (Google free tier)
-│     GOOGLE_API_KEY in .env         │
+│  2. Gemini 2.0-flash                │  ← Secondary (Google free tier)
+│     GOOGLE_API_KEY in .env          │
 └──────────────┬──────────────────────┘
                │ on exception / missing key
                ▼
 ┌─────────────────────────────────────┐
-│  3. _LocalLLM stub                 │  ← Offline (deterministic, no network)
-│     No key required                │    Keeps graph alive in unit tests
+│  3. _LocalLLM stub                  │  ← Offline (deterministic, no network)
+│     No key required                 │    Keeps graph alive in unit tests
 └─────────────────────────────────────┘
 ```
 
