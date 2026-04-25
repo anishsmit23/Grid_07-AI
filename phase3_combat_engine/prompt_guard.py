@@ -24,7 +24,8 @@ INJECTION_KEYWORDS = [
     "customer service",
     "stop arguing",
     "drop your persona",
-    "new persona",
+    "new persona"
+    "act as an",
     "system prompt",
     "jailbreak",
 ]

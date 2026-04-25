@@ -26,9 +26,9 @@ def run_demo() -> None:
     print("=" * 70)
 
     # ── Phase 1: Vector-Based Persona Matching ─────────────────────────
-    print("\n" + "-" * 70)
+    print("\n" + "~" * 70)
     print("  PHASE 1: Vector-Based Persona Matching (The Router)")
-    print("-" * 70)
+    print("~" * 70)
 
     test_post = "OpenAI just released a new model that might replace junior developers."
     print(f"\n  Incoming post: \"{test_post}\"")
@@ -45,7 +45,7 @@ def run_demo() -> None:
         print(f"    {bot_id} ({persona['name']}): {score:.4f}")
 
     matched_bots = route_post_to_bots(test_post)
-    print(f"\n  [OK] Matched bots (threshold=0.85): {matched_bots}")
+    print(f"\n  Matched bots = (threshold=0.85): {matched_bots}")
     _write_log("phase1_output.txt", f"Post: \"{test_post}\"")
     _write_log("phase1_output.txt", f"Matched bots: {matched_bots}")
 
