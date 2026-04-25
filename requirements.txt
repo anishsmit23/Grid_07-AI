@@ -1,6 +1,7 @@
-langchain
-langgraph
-langchain-google-genai
+langchain==0.3.27
+langchain-core==0.3.72
+langchain-google-genai==2.1.8
+langgraph==0.6.6
 chromadb
 sentence-transformers
 pydantic
