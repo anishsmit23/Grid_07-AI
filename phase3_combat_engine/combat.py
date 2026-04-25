@@ -33,7 +33,7 @@ def _get_combat_llm():
         groq_key = os.getenv("GROQ_API_KEY")
         if groq_key:
             return ChatGroq(
-                model="llama-3.1-8b-instant",
+                model="llama-3.3-70b-versatile",
                 api_key=groq_key,
                 temperature=0.7,
             )

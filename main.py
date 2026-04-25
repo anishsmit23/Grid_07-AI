@@ -45,7 +45,7 @@ def run_demo() -> None:
         print(f"    {bot_id} ({persona['name']}): {score:.4f}")
 
     matched_bots = route_post_to_bots(test_post)
-    print(f"\n  [OK] Matched bots (threshold=0.30): {matched_bots}")
+    print(f"\n  [OK] Matched bots (threshold=0.85): {matched_bots}")
     _write_log("phase1_output.txt", f"Post: \"{test_post}\"")
     _write_log("phase1_output.txt", f"Matched bots: {matched_bots}")
 
