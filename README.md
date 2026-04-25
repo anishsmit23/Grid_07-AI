@@ -42,6 +42,18 @@
 ## Architecture
 
 ```
+New Message Arrives
+        ↓
+Who cares about this topic?
+        ↓
+That personality (BotA, BotB, BotC) researches
+        ↓
+Writes opinion
+        ↓
+If challenged --------------→ defends opinion
+                                 ↓
+                  Ignores manipulation attempts
+
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        GRID07 PIPELINE                                 │
 │                                                                        │
